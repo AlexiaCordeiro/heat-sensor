@@ -407,8 +407,8 @@ static void atualizarDisplay() {
   fb_clear(); // apaga
 
   // Escrevendo o Relógio e informado a localização
-  snprintf(buf, sizeof(buf), "%02d:%02d:%02d", h, m, s);
-  fb_puts(40, 0, buf);
+  snprintf(buf, sizeof(buf), "Tempo ON: %02d:%02d:%02d", h, m, s);
+  fb_puts(0, 0, buf);
 
   // linha horizontal
   fb_hline(0, 127, 9);
